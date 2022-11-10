@@ -1,1 +1,2 @@
-Read ME
+# Working AMSI Bypasses
+#### **Updated frequently.**
